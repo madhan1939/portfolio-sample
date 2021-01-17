@@ -1,0 +1,429 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  border: none;
+}
+#home{
+  background-color: black;
+}
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 40px;
+  overflow: hidden;
+  background-color: black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+.cv-btn{
+    text-decoration: none !important;
+    border-radius: 30px;
+    padding: 7px 20px;
+    float: center;
+    margin-top: 15px;
+    color: white !important;
+    background: black;
+    font-weight: 600;
+}
+
+.about-me p{
+  color: white;
+}
+.navbar .nav-left {
+  float: left;
+}
+#home{
+  background-image: url("../images/b.jpg");
+}
+#about{
+  background-image: url("../images/a.jpg");
+  background-size: cover;
+}
+#skills,#certifications{
+  background-image: url("../images/c.png");
+  background-size: cover;
+}
+#contact{
+  background-image: url("../images/canvas.png");
+  background-size: cover;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 1;
+  text-align: center;
+}
+
+h2 {
+  font-size: 45px;
+  position: relative;
+  font-family: calibri;
+  letter-spacing: 2px;
+  color: white/*#f2f2f2*/;
+  text-align: center;
+}
+#box{
+  width: 900px;
+  height: 350px;
+}
+#box2{
+  height: 300px;
+}
+h1.h2 {
+  font-family: "calibri", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+li a:hover {
+  background-color: white;
+  color: #2f3061;
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-right: 5px;
+        overflow: hidden;
+        background-color: #2f3061;
+        top: 0;
+      }
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 12px 14px;
+        font-size: 13px;
+        text-decoration: none;
+        font-weight: 300;
+      }
+
+ }
+
+
+
+/* Home   */
+header {
+  background: #2f3061;
+  color: #f7fff7;
+  text-align: center;
+}
+
+#home > .content-wrap > p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  #home > .content-wrap > p {
+    font-size: 15px;
+  }
+
+  #home > .content-wrap > h2 {
+    font-size: 24px;
+  }
+}
+
+/* about ME   */
+.about-me {
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.about-me img {
+  width: 250px;
+  height: 250px;
+  /* border: 4px solid black; */
+  float: left;
+}
+
+.about-me p {
+  float: left;
+  font-size: 18px;
+  /* margin: 30px; */
+}
+
+
+.box-wrapper {
+  height: fit-content;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#box {
+  padding: 5px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+#box1,
+#box2,
+#box3 {
+  flex-grow: 1;
+  /*height: 100px;*/
+  /*margin: 10px;*/
+  /* border: solid 1px orange;  */
+  /* color: white; */
+}
+
+#box > #box1,
+#box2,
+#box3 > h3 {
+  text-align: center;
+}
+
+#box > #box1,
+#box2,
+#box3 > p {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .about-me h2 {
+        /* float: left; */
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .about-me p {
+        float: left;
+        font-size: 16px;
+        /* margin: 30px; */
+      }
+      
+  .about-me img {
+    width: 150px;
+    height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+    /* border: 4px solid black; */
+  }
+
+   .box-wrapper {
+    height: 120vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #box {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* skills */
+.skills {
+  background: #a1c6d7;
+}
+/*.s img{
+  padding: 10px;
+  align-items: center;
+}*/
+.grid-container {
+  display: grid;
+  /*margin: 20px;*/
+  grid-template-columns: auto auto auto auto;
+  /*padding: 10px;*/
+}
+
+.grid-item {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  margin:10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.grid-container .grid-item img{
+  width: 100px;
+  height: 100px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .skills h2 {
+        /* float: left; */
+        font-size: 30px;
+        text-align: center;
+      }
+
+     .grid-container {
+        display: grid;
+        /*margin: 20px;*/
+        grid-template-columns: auto;
+        /*padding: 10px;*/
+      }
+  
+    .grid-item {
+      background-color: white;
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      margin:10px;
+      font-size: 20px;
+      text-align: center;
+    } 
+
+   
+}
+
+
+/* certifications */
+/*.certification {
+  background-color: #ffe66d;
+}
+*/
+@media screen and (max-width: 600px) {
+   .certification h2{
+       font-size: 30px;
+       text-align: center;
+   } 
+  
+}
+
+#contact {
+  /* background-color: #8F8389; */
+    background-image: url("../images/c.png");
+  background-size: cover;
+  color: white;
+}
+
+.fa {
+  padding: 5px;
+  color: #0A37B3;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  color: lightgrey;
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  color: white;
+  margin-left: 50px;
+}
+.fa-envolope-square {
+  color: white;
+}
+.fa-whatsapp {
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+
+
+/*.material-icons {
+   color: #F05581; 
+}*/
+
+.contact-container {
+  display: grid;
+  /*margin: 20px;*/
+  grid-template-columns: auto auto auto;
+  /*padding: 10px;*/
+}
+
+.contact-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  margin:10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .fa-linkedin {
+        margin-left: 250px;
+        color: white;
+      }
+    
+      #box3 > .material-icons{
+        margin-right: 10px;
+      }
+  }
+@media screen and (max-width: 600px) {
+    #contact h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+  .fa {
+    padding: 2px;
+    color: orange;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa-linkedin {
+    font-size: 20px;
+    margin-left: 70px;
+    color: white;
+  }
+  .fa-whatsapp {
+    color: white;
+  }
+
+  .fa-instagram {
+    color: white;
+  }
+
+  .contact-container {
+  display: grid;
+  /*margin: 20px;*/
+  grid-template-columns: auto;
+  /*padding: 10px;*/
+}
+
+.contact-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  margin:10px;
+  font-size: 14px;
+  text-align: center;
+}
+}
+
