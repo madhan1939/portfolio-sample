@@ -111,7 +111,17 @@ li a:hover {
   color: #2f3061;
 }
 
+@media (max-width: 1030px) {
+  .about-me {
+    text-align: center;
+  }
 
+  #box2 img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
 @media screen and (max-width: 600px) {
     .navbar {
         list-style-type: none;
